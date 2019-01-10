@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:ctrls="clr-namespace:TabViewSample.Controls"
+    x:Class="TabViewSample.Controls.TabView">
+    
+    <ContentView.Resources>
+      <ResourceDictionary>
+            
+            <DataTemplate x:Key="checked">
+                 <StackLayout FlexLayout.Grow="1">
+                    <Label Text="Header" HorizontalTextAlignment="Center" FontSize="Large" />
+                    <BoxView HeightRequest="5" Color="Black" />
+                 </StackLayout>
+             </DataTemplate>
+            
+            
+            
+            <DataTemplate x:Key="unchecked">
+                
+                
+                    <StackLayout FlexLayout.Grow="1">
+                        <Label Text="Header" HorizontalTextAlignment="Center" FontSize="Large" />
+                        <BoxView HeightRequest="5" Color="Transparent" />
+                     </StackLayout>
+                
+                
+                </DataTemplate>
+            
+            
+            
+            </ResourceDictionary>
+        
+        </ContentView.Resources>
+    
+    
+    <StackLayout>
+        
+        <FlexLayout x:Name="head" Direction="Row">
+            
+            
+           
+            
+            
+            
+            </FlexLayout>
+        
+        
+       
+        
+        <ctrls:TabScrollView x:Name="scroll" IsScrollEnabled="false" IsBounceEnabled="false" Orientation="Horizontal"  VerticalOptions="FillAndExpand">
+            
+            <StackLayout  x:Name="body" Orientation="Horizontal" VerticalOptions="FillAndExpand">
+                
+                
+                </StackLayout>
+            
+            
+            </ctrls:TabScrollView>
+        
+        
+        </StackLayout>
+</ContentView>

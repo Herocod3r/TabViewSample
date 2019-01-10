@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:TabViewSample"
+    xmlns:ctrls="clr-namespace:TabViewSample.Controls"
+    x:Class="TabViewSample.MainPage">
+    <StackLayout Padding="0,30">
+       
+        
+        <ctrls:TabView VerticalOptions="FillAndExpand">
+            
+           <ctrls:TabView.ItemSource>
+                
+                <ctrls:TabItem HeaderText="Tab 1">
+                    <StackLayout  >
+                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="This is a message from tab 1" />
+                        </StackLayout>
+                </ctrls:TabItem>
+                
+                
+                 <ctrls:TabItem HeaderText="Tab 2">
+                     <StackLayout  >
+                        <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Text="This is a message from tab 2" />
+                        </StackLayout>
+                </ctrls:TabItem>
+                
+            </ctrls:TabView.ItemSource>
+            
+            
+        </ctrls:TabView>
+        
+        
+    </StackLayout>
+</ContentPage>
