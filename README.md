@@ -5,7 +5,7 @@
 
 Just Clone and try it out  
 
-> If you find this helpfull Star it!!
+> ### If you find this helpfull Star it!!
 
 
 ![sample](https://i.ibb.co/5Tpm7KJ/tabsample-1.gif)
